@@ -1,0 +1,20 @@
+{
+  "name": "image-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes imgur urls from a reddit post, and downloads all images",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^7.0.5",
+    "async": "^2.1.5",
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "retry": "^0.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
