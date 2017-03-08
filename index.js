@@ -12,7 +12,7 @@ const regex = new RegExp(imgurLinkexp);
 const redditUrl = 'https://www.reddit.com/r/AskReddit/comments/5vao3o/what_is_your_current_desktop_background/.json';//limit=200
 // const redditUrl = 'https://www.reddit.com/r/AskReddit/comments/5vao3o/what_is_your_current_desktop_background/.json?limit=500';
 
-const destFolder = __dirname + '\\images1\\';
+const destFolder = __dirname + '\\images\\';
 
 let urlList = [];
 let promises = [];
@@ -40,8 +40,8 @@ fs.readFile('./data.json', 'utf8', (err, data) => {
         let contents = JSON.parse(data)[1].data.children;
         console.log('Number of posts to parse through: ' + contents.length);
 
-        for (let i = 0; i < 3; i++) {
-            // for (let i = 0; i < contents.length; i++) {
+        // for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < contents.length; i++) {
 
             let urlArray = parseUrl(contents[i].data.body);
 
