@@ -7,6 +7,7 @@
     "@types/node": "^7.0.5",
     "async": "^2.1.5",
     "cheerio": "^0.22.0",
+    "progress": "^1.1.8",
     "request": "^2.79.0",
     "request-promise": "^4.1.1",
     "requestretry": "^1.12.0",
